@@ -15,7 +15,20 @@
     </head>
     <body>
         <div class="container">
-            <h1>Marvel!</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Search your marvel hero! </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="search">
+                        <input type="text" name="name" placeholder="Np. Hulk">
+                    </form>
+                </div>
+            </div>
         </div>
+
+        <script src="/js/search-heroes/search.js"></script>
     </body>
 </html>
