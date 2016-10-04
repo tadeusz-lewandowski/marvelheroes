@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/heroes/{name}', function ($name) {
+
+    
     return "Heroes response ".$name;
 });
