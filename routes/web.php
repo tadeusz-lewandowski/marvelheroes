@@ -11,12 +11,17 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/heroes/{name}', function ($name) {
+    include_once(app_path() . '/myconfig/config.php');
 
-    
-    return "Heroes response ".$name;
+    $client = new GuzzleHttp\Client();
+
+    $res = $client->request('GET', 'http://gateway.marvel.com/v1/public/characters?apikey='.$apikey.'&hash='.$hash.'&ts='.$ts.'&name='.$name.'');
+    return $res->getBody();
 });

@@ -10,7 +10,9 @@
 
         <!-- Styles -->
         <style>
-
+            input{
+                margin-bottom: 24px;
+            }
         </style>
     </head>
     <body>
@@ -26,6 +28,19 @@
                         <input type="text" name="name" placeholder="Np. Hulk">
                     </form>
                 </div>
+            </div>
+            <div class="row" id="result">
+                <div class="col-md-2">
+                    <img src="" alt="" id="herophoto"/>
+                </div>
+                <div class="col-md-10">
+                    <p id="description">
+
+                    </p>
+                </div>
+            </div>
+            <div id="result-notfound">
+                <h1>Not found</h1>
             </div>
         </div>
 
